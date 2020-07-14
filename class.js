@@ -48,8 +48,11 @@ class Wagon {
     }    //- Returns true if there is at least one unhealthy person in the wagon. Return false if not.
 
     totalFood() {
-            let foodCount = this.passengers.map(traveler => this.passengers = this.food)
-        return foodCount //variables?
+            let foodCount = 0
+            for(let i = 0; i <  this.passengers.length; i ++){
+                    foodCount += this.passengers[i].food 
+            }
+        return foodCount
         console.log(foodCount)
     }}
-    //- Returns the total amount of food among all passengers in the wagon.
+    //- Returns the total amount of food among all passengers in the wagon
